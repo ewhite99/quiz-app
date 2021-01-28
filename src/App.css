@@ -1,38 +1,90 @@
-.App {
+*{
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+body{
+  background-color: #EDDFFF;
+  font-size: 16px;
+}
+
+h1{
+  margin-bottom: 0.25em;
+  color: #9B83BB;
+}
+
+.container{
+  margin: 8% auto;
+  padding: 2em 3em;
+  width: 90%;
+  max-width: 750px;
+  height: 550px;
+  background-color: #FFFFFF;
+}
+
+.question{
+  margin-bottom: 1.5em;
+  padding: 1.5em;
+  height: 115px;
   text-align: center;
+  font-size: 1.32em;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: #CBA3FF;
+  border-radius: 5px;
+  box-shadow: 0 3px 0px 0px #9B83BB;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.choice-container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.choice{
+  margin: 1.5em 0;
+  padding: 1.75em 2em;
+  display: block;
+  min-width: 45%;
+  background-color: #FBF2FF;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 3px 0px 0px #EDDFFF;
+  cursor: pointer;
+  font-size: 1em;
+  color: #9B83BB;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.choice:hover{
+  background-color: #CBA3FF;
+  box-shadow: 0 3px 0px 0px #9B83BB;
+  color: #FFFFFF;
+}
+
+.choice:focus{
+  outline: none;
+  text-decoration: underline;
+}   
+
+
+.question-count{
+  text-align: center;
+  margin-top: 1em;
+  font-weight: 700;
+}
+
+.results-container{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.results{
+  color: #9B83BB;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2em;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
